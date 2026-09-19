@@ -11,4 +11,12 @@ export const siteConfig = {
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
   ],
+  email: "you@example.com",
+socials: [
+  { label: "GitHub", href: "https://github.com/your-username" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/your-username" },
+  
+],
+url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+keywords: ["Full-Stack Developer", "Next.js", "React", "TypeScript", "Portfolio"],
 }
