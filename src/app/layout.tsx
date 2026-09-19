@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, EB_Garamond, JetBrains_Mono } from "next/font/google
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 
 const jetbrainsMonoHeading = JetBrains_Mono({subsets:['latin'],variable:'--font-heading'});
 
@@ -17,6 +18,11 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata : Metadata = {
+  title: "Next.js + Tailwind CSS + Shadcn UI",
+  description: "A starter template for Next.js with Tailwind CSS and Shadcn UI.",
+}
 
 export default function RootLayout({
   children,
